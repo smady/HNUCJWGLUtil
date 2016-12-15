@@ -18,20 +18,20 @@
 
 ### 使用示例
 1. 使用构造方法传入的cookie使用，得到课表
-```php
-<?php
-require(__DIR__ . 'util.php');
-$u = new Util('////your cookies');
-$table = $u->getSchedule(); //得到课程表
-var_dump($table);
-```
+	```php
+	<?php
+	require(__DIR__ . 'util.php');
+	$u = new Util('////your cookies');
+	$table = $u->getSchedule(); //得到课程表
+	var_dump($table);
+	```
 
 2. 使用学号和密码登录后得到课表
-```php
-<?php
-require(__DIR__ . 'util.php');
-$u = new Util();
-$u->login('你的学号', '你的密码');
-$table = $u->getSchedule(); //得到课程表
-var_dump($table);
-```
+	```php
+	<?php
+	require(__DIR__ . 'util.php');
+	$u = new Util();
+	$u->login('你的学号', '你的密码');
+	$table = $u->getSchedule(); //得到课程表
+	var_dump($table);
+	```

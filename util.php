@@ -84,7 +84,7 @@ Class Util {
 					'User-Agent:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.116 Safari/537.36',
 				], 'POST', [
 					'Xnxqh' => '2016-2017-1',
-					'Xh' => '140920049',
+					'Xh' => $this->id,
 					'noshowtool' => 'true',
 					'showKbmx' => 'ON'
 				]);
@@ -108,9 +108,10 @@ Class Util {
 			$res = self::fetch('http://jwgl.hnuc.edu.cn/jwxs/Xsxk/Xk_CjZblist.asp?flag=find', [
 				'Cookie: '. $this->cookies
 				], 'POST',[
-				'XH' => '140920049',
+				'XH' => $this->id,
 				'noshowtool' => '',
-				'Xnxqh' => '2015-2016-2',
+				// 'Xnxqh' => '2015-2016-2',
+				'Xnxqh' => $term,
 				'KhfsCode' => '',
 				'D1' => '',
 				'KcFlCode' => '',
